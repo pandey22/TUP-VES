@@ -1,58 +1,34 @@
-import { Plane, Cpu, Rocket, Navigation, Shield, Zap, Server, Radar } from "lucide-react";
+import { Plane, Cpu, Rocket, Navigation, Shield, Zap, Server, Radar, Code, Target, Clock, RefreshCcw } from "lucide-react";
 
 const ExpertiseSection = () => {
   const expertiseAreas = [
-    {
-      icon: Plane,
-      title: "Flight Control Systems",
-      description: "Advanced flight control and autopilot systems"
-    },
-    {
-      icon: Zap,
-      title: "Avionics & Power Systems", 
-      description: "Critical avionics and power distribution systems"
-    },
-    {
-      icon: Rocket,
-      title: "Propulsion System Engineering",
-      description: "Engine control and propulsion optimization"
-    },
-    {
-      icon: Server,
-      title: "Spacecraft Subsystems",
-      description: "Power, Thermal, and Communications systems"
-    },
-    {
-      icon: Cpu,
-      title: "FADEC and Engine Controller Development",
-      description: "Full Authority Digital Engine Control systems"
-    },
-    {
-      icon: Navigation,
-      title: "Inertial Navigation and Guidance Systems",
-      description: "Precision navigation and guidance solutions"
-    },
-    {
-      icon: Shield,
-      title: "Embedded Systems Safety Analysis",
-      description: "Safety-critical embedded system validation"
-    },
-    {
-      icon: Cpu,
-      title: "Model-Based Systems Engineering (MBSE)",
-      description: "Digital engineering and systems modeling"
-    },
-    {
-      icon: Server,
-      title: "Hardware-in-the-Loop (HWIL) / Software-in-the-Loop (SWIL)",
-      description: "Real-time simulation and testing platforms"
-    },
-    {
-      icon: Radar,
-      title: "Defense EW, UAV, and Hypersonic Programs",
-      description: "Advanced defense and next-gen systems"
-    }
-  ];
+  {
+    icon: Code, // Represents coding & testbench development
+    title: "UVM Testbench Development",
+    description: "Advanced reusable testbenches for high-reliability ASIC/FPGA designs."
+  },
+  {
+    icon: Target, // Represents precision & coverage
+    title: "Coverage-Driven Verification",
+    description: "Functional and code coverage for verification completeness."
+  },
+  {
+    icon: Shield, // Represents compliance & safety
+    title: "Compliance & Safety Standards",
+    description: "DO-254 DAL-A/B verification strategies."
+  },
+  {
+    icon: Clock, // Represents timing verification
+    title: "Gate-Level & Timing Verification",
+    description: "Ensuring timing closure and power integrity."
+  },
+  {
+    icon: RefreshCcw, // Represents automation & continuous cycles
+    title: "Regression Automation",
+    description: "Jenkins and scripting for faster sign-off cycles."
+  }
+];
+
 
   return (
     <section id="expertise" className="py-20 bg-card">
